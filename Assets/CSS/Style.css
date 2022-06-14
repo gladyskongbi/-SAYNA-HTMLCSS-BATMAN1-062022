@@ -6,10 +6,10 @@
 }
 
 :root{
-    --yellow-color: #FFFF00 
-    --yellow-light: #f8f184
-    --blue-color: #19587d
-    --white-color: #ffffff
+    --yellow-color: #FFFF00; 
+    --yellow-light: #f8f184;
+    --blue-color: #19587d;
+    --white-color: #ffffff;
 }
 *{
     margin: 0;
@@ -37,7 +37,7 @@ button{
 body{
     background-color: black;
     color: white;
-    font-family: Space-Grotesk;
+    font-family: 'Space-grotesk';
     font-weight: 300;
 }
 
@@ -50,14 +50,35 @@ nav{
 }
 
 ul{
-list-style: none;
-
+  list-style: none;
 }
-a{
+
+nav ul a{
   color: var(--white-color)
   font-size: 30px;
   font-weight: 500;
   font-family: 'Rajdhani'
+}
+
+nav ul a:hover {
+    color: var(--yellow-color)
+}
+
+/*design de la partie en tete hero*/
+
+#hero{
+    background-image: url(../Illustrations/Bathome1.png);
+    height: 800px;
+    background-position: top center;
+    background-color: #19587d;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*design de la section batman personnage*/
+.batman-personnage{
+    display: flex;
+    justify-content: space-between
 }
 /*texte decoration: none*/;
 
