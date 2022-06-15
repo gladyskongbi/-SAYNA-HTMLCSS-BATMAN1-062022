@@ -10,6 +10,10 @@
     --yellow-light: #f8f184;
     --blue-color: #19587d;
     --white-color: #ffffff;
+    --gradient-white: #eddebf94;
+    --gradient-red: #89000967;
+    --black-color: #000;
+
 }
 *{
     margin: 0;
@@ -37,7 +41,7 @@ button{
 body{
     background-color: black;
     color: white;
-    font-family: 'Space-grotesk';
+    font-family: 'Space Grotesk';
     font-weight: 300;
 }
 
@@ -72,7 +76,51 @@ nav ul a:hover {
     background-position: top center;
     background-color: #19587d;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+#hero .titre{
+    margin: 20px 0;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(
+     80deg,var(--gradient-white),var(--gradient-red)
+    );
+    box-shadow: var(--black-color) 5px 5px 60px;
+}
+
+#heroflèche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 285px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    top: 230px;
+}
+
+.scroll .social{
+     margin-top: 15px;
 }
 
 /*design de la section batman personnage*/
