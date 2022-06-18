@@ -247,27 +247,136 @@ nav ul a:hover {
 }
 
 
+/*  Design de la partie contact - formulaire */
+
 #formulaire {
-      background: linear-gradient(80deg, var(--brown-light), var(--brown-dark));
-      padding: 70px 0;
+    background: linear-gradient( 80deg, var(--brown-light), var(--brown-dark));
+    padding: 70px 0;
 }
 
-#formulaire .container{
+#formulaire .container {
     width: 50%;
     margin: 0 auto;
 }
 
-#formulaire h2{
+#formulaire h2 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 32px;
 }
 
-
-#formulaire .titre{
+#formulaire .titre {
     display: block;
-    margin: 10px;
+    margin: 10px 0;
 }
-a:hover{
-    color: var(--yellow-color);
+
+#formulaire .container input[type="email"],
+textarea {
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 500px;
+    border-bottom: 2px darkgrey;
+    background-color: transparent;
+    padding-top: 10px 0;
+}
+
+#formulaire .news {
+    margin: 10px 0;
+    margin-bottom: 2px darkgrey;
+}
+
+#formulaire .icon img {
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+:-ms-input-placeholder {
+    color: #F8F184;
+    font-size: 15px;
+}
+
+:-ms-input-placeholder {
+    color: #F8F184;
+    font-size: 15px;
+}
+
+::placeholder {
+    color: #F8F184;
+    font-size: 15px;
+}
+
+.btn-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#formulaire input[type="radio"] {
+    opacity: 0;
+}
+
+.btn-group label {
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid;
+    -o-border-image: linear-gradient(69deg, red, blue)1;
+    border-image: linear-gradient(69deg, red, blue)1;
+    font-size: 20px;
+}
+
+input[type='submit'] {
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+    background: linear-gradient( 80deg, var(--gradient-white), var(--gradient-red));
+    border: none;
+}
+
+#citation {
+    margin: 90px;
+}
+
+#citation .citation-carte {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citation .citation-auteur {
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: 'rajdhani';
+}
+
+#citation .guillemet-close {
+    float: right;
+}
+
+
+/* Design du footer */
+
+footer {
+    margin-top: 160px;
+}
+
+footer .text-footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .social-footer {
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer .social-item {
+    padding: 20px;
+}
+
+footer .social-item img {
+    width: 2%;
 }
