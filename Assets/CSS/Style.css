@@ -45,6 +45,8 @@ body{
     font-weight: 300;
 }
 
+
+
 /* design de la navigation */
 nav{
     display: flex;
@@ -68,6 +70,10 @@ nav ul a:hover {
     color: var(--yellow-color)
 }
 
+.logo:hover{
+    -webkit-filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%) ;
+    filter:invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%)
+}
 /*design de la partie en tete hero*/
 
 #hero{
@@ -77,6 +83,7 @@ nav ul a:hover {
     background-color: #19587d;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 40px;
 }
 
 .content{
@@ -84,6 +91,7 @@ nav ul a:hover {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    width: 60%;
     margin: 0 auto;
     padding-top: 150px;
 }
@@ -102,7 +110,15 @@ nav ul a:hover {
      80deg,var(--gradient-white),var(--gradient-red)
     );
     box-shadow: var(--black-color) 5px 5px 60px;
+    opacity: 60%;
 }
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
 
 #heroflèche{
     display: block;
@@ -115,21 +131,143 @@ nav ul a:hover {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 50px;
-    top: 230px;
+    right: 80px;
+    top: 240px;
 }
 
-.scroll .social{
+.scroll: hover{
+    -webkit-filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%) ;
+    filter:invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%)
+}
+
+.scroll .social {
      margin-top: 15px;
 }
 
+#batman-cinema {
+    margin-top: 40px;
+}
 /*design de la section batman personnage*/
-.batman-personnage{
+
+.batman-personnage {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    border-radius: 20px 
 }
 /*texte decoration: none*/;
 
+#batman-cinema .titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman-cinema .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+
+#batman-cinema .personnage-info {
+    text-align: center;
+}
+
+#Nemesis .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+
+#Nemesis .personnage-info {
+    text-align: center;
+} 
+
+#Alliés .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+
+#Alliés .personnage-info {
+    text-align: center;
+} 
+
+#batman-justice-league .titre {
+    font-weight: bold;
+    margin: 30px 0;
+
+}
+
+#batman-justice-league .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+
+/* design de la partie multimédia */
+
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+
+#multimedia button.right{
+    right: -90%;
+}
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#multimedia .slider-image{
+    width: 100%;
+}
+
+#multimedia .slider-content{
+    padding: 15px;
+    background-color: #96928948;
+    /*border-radius: 20px */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#multimedia p{
+    font-size: 11px;
+}
+
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
+
+
+#formulaire {
+      background: linear-gradient(80deg, var(--brown-light), var(--brown-dark));
+      padding: 70px 0;
+}
+
+#formulaire .container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#formulaire h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+
+#formulaire .titre{
+    display: block;
+    margin: 10px;
+}
 a:hover{
     color: var(--yellow-color);
 }
